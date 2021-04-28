@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Azure.Storage.Blobs
+    versions:
+    - 12.8.0
+    - 12.8.1
+  - dependency-name: Microsoft.Azure.Storage.Common
+    versions:
+    - 11.2.2
+  - dependency-name: Microsoft.Azure.Services.AppAuthentication
+    versions:
+    - 1.6.0
+  - dependency-name: Microsoft.Azure.Storage.Blob
+    versions:
+    - 11.2.2
